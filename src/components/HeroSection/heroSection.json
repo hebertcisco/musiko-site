@@ -1,0 +1,18 @@
+{
+  "title": "Baixe o melhor reprodutor de música gratuito",
+  "copy": "Além de ser grátis, Musiko não tem propagandas e é constatemente atualizado.",
+  "download": [
+    {
+      "icon": "fab fa-google-play",
+      "ref": "#google-play",
+      "title": "Google Play",
+      "class_name": "list-inline-item mb-2 mb-lg-0"
+    },
+    {
+      "icon": "fab fa-android",
+      "ref": "#apk",
+      "title": "Baixar APK",
+      "class_name": "list-inline-item"
+    }
+  ]
+}
