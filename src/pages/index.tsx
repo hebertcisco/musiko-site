@@ -119,6 +119,7 @@ export async function getStaticProps() {
   const res_footer_social = await fetch(
     `${process.env.BASE_URL}api?doc=social&collection=api`
   );
+
   const header = await res_header.json();
   const seo = await res_seo.json();
   const about = await res_about.json();
@@ -130,19 +131,23 @@ export async function getStaticProps() {
   const footer_copy = await res_footer_copy.json();
   const footer_social = await res_footer_social.json();
 
-  return {
-    props: {
-      header,
-      seo,
-      about,
-      about_features,
-      about_features_more,
-      hero,
-      footer,
-      footer_contact_info,
-      footer_copy,
-      footer_social,
-    },
-    revalidate: 300, // In seconds
-  };
+  try {
+    return {
+      props: {
+        header,
+        seo,
+        about,
+        about_features,
+        about_features_more,
+        hero,
+        footer,
+        footer_contact_info,
+        footer_copy,
+        footer_social,
+      },
+      revalidate: 300, // In seconds
+    };
+  } catch (error) {
+    return JSON.stringify(error);
+  }
 }
