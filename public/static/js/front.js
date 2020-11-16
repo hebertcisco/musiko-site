@@ -1,8 +1,6 @@
 $(function () {
 
-    // ================================================
-    //  NAVBAR BEHAVIOR
-    // ================================================
+
     $(window).on('scroll load', function () {
         if ($(window).scrollTop() > 5) {
             $('.navbar').addClass('active');
