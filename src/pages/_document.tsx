@@ -71,6 +71,7 @@ export default class CustomDocument extends Document<DocumentProps> {
             />
 
             <script dangerouslySetInnerHTML={this.setGoogleTags()} />
+            <script data-ad-client={`${process.env.G_ADS_PUB}`} async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
             <script src="static/vendor/jquery/jquery.min.js"></script>
             <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
